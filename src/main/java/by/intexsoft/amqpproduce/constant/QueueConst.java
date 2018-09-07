@@ -1,4 +1,4 @@
-package by.intexsoft.amqpproduce;
+package by.intexsoft.amqpproduce.constant;
 
 public class QueueConst {
 

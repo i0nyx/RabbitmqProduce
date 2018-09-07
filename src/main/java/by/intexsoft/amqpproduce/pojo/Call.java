@@ -1,4 +1,4 @@
-package by.intexsoft.amqpproduce;
+package by.intexsoft.amqpproduce.pojo;
 
 
 import java.util.Date;
@@ -9,11 +9,6 @@ public class Call {
     private int id;
     private Date date;
     private String message;
-
-    public Call(String message){
-        this.date = new Date();
-        this.message = message;
-    }
 
     @Override
     public String toString() {
@@ -38,12 +33,24 @@ public class Call {
         return Objects.hash(id, date);
     }
 
+    public int getId() {
+        return id;
+    }
+
     public void setId(int id) {
         this.id = id;
     }
 
+    public Date getDate() {
+        return date;
+    }
+
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    public String getMessage() {
+        return message;
     }
 
     public void setMessage(String message) {
