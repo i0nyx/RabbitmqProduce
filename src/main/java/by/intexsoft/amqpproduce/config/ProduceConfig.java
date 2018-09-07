@@ -39,7 +39,7 @@ public class ProduceConfig {
 
     @Bean
     public MessageService messageService() {
-        return new MessageService();
+        return new MessageService(template());
     }
 
 
