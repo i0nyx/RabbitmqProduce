@@ -25,7 +25,8 @@ public class MessageService {
         call.setId(UUID.randomUUID());
         call.setMessage("Test message");
         call.setDate(new Date());
-        template.convertAndSend(call);
+        template.convertAndSend("info", call);
+        template.convertAndSend("error", "cant send call object");
         log.info("send success");
     }
 }
