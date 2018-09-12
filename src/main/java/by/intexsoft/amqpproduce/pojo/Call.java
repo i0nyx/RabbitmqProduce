@@ -1,16 +1,20 @@
 package by.intexsoft.amqpproduce.pojo;
 
-
-import lombok.Data;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Date;
 import java.util.UUID;
 
-@Data
+/**
+ * TODO Javadoc
+ */
+@Builder
+@Getter
+@Setter
 public class Call {
-
     private UUID id;
     private Date date;
     private String message;
-
 }
