@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.UUID;
 
 /**
- * TODO Javadoc
+ * Class of calls with property id, date, message
  */
 @Builder
 @Getter
