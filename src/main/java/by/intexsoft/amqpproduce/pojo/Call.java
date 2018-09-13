@@ -8,7 +8,6 @@ import java.util.UUID;
 
 @Data
 public class Call {
-
     private UUID id;
     private Date date;
     private String message;
